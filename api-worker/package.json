@@ -1,0 +1,25 @@
+{
+  "name": "launchpad-api-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "db:local": "wrangler d1 migrations apply launchpad-db --local",
+    "db:remote": "wrangler d1 migrations apply launchpad-db --remote",
+    "cf-typegen": "wrangler types",
+    "token:demo": "node scripts/sign-demo-token.mjs"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "jose": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.15.30",
+    "typescript": "^5.8.3",
+    "wrangler": "^4.149.0"
+  }
+}

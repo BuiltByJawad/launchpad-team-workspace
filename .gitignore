@@ -1,0 +1,24 @@
+# Dependencies and generated build output
+**/node_modules/
+**/.next/
+**/dist/
+**/.wrangler/
+
+# Local credentials and environment files
+**/.dev.vars
+**/.dev.vars.*
+!**/.dev.vars.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Generated framework and Cloudflare types
+**/next-env.d.ts
+**/worker-configuration.d.ts
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
